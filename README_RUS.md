@@ -1,47 +1,47 @@
-**Develop a program in C for creating graphs of functions defined by arbitrary expressions. To calculate the values ​​of expressions, use Dijkstra's algorithm for translating expressions into Polish notation.**
+**На языке программирования Си разработать программу для построения графиков функций, задаваемых произвольными выражениями. Для вычисления значений выражений использовать алгоритм Дейкстры для перевода выражения в польскую нотацию.**
 
-* ***Conditions***
-
-The size of the field for displaying graphs is a rectangle of 25 by 80 points.
-
-Definition area - [0; 4 Pi]
-
-Range of values - [-1; 1]
-
-Orientation of the coordinate plane - the ordinate axis is directed downward, the abscissa axis is directed to the right.
-
-The center of coordinates is middle of the left border (point {0, 13}).
-
-You don't need to draw axes. 
-
-Nothing but the graph should be displayed.
-
-Values are rounded according to the rules of mathematics.
-
-* ***Graphics***
+* *Условия*
   
-The field should be displayed using Star symbol for the chart line and "." for the rest of the screen space.
+Размер поля для вывода графиков - прямоугольник 25 на 80 точек.
 
-* ***Modules***
+Область определения - [0; 4 Пи]
 
-Expression parsing and creating a list of lexical units.
+Область значений - [-1; 1]
 
-Translation into Polish notation and calculation using this notation.
+Ориентация координатной плоскости - ось ординат направлена вниз, ось абсцисс - направо. 
 
-Drawing a graph in the terminal.
+Центр координат - середина левой границы (точка {0, 13}). 
 
- library for organizing dynamic data structures (stack, list, etc.).
+Рисовать оси не нужно.
 
+Ничего кроме графика выводиться не должно.
+
+Значения округляются по правилам математики.
+
+<br/>
+
+* *Графика*
+  
+График должен быть выведен с помощью знаков «Звездочек» для линии графика и « . » для всего остального пространства экрана. ==***
+
+* *Модули*
+
+Разбор строки выражения и получение списка лексем.
+
+Перевод в польскую нотацию и вычисление по ней.
+
+Отрисовка графика в терминале.
+
+Библиотеки для организации динамических структур данных (стек, список и т.д.).
 
 <br/>
 <br/>
 
- ***Example:*** 
+ *Пример:* 
 
-Input: sin(cos(2*x))
+Входные данные: sin(cos(2*x))
 
-Output:
-
+Выходные данные:
 ```
 ................................................................................
 ................................................................................
@@ -69,30 +69,4 @@ Output:
 ................................................................................
 ................................................................................
 ```
-
-> Only `<math.h>`, `<stdio.h>`, `<stdlib.h>`, `<string.h>` and your own modules can be used 
-
-> This task does not provide an auto-check for output, your image may differ slightly from this example
-
-> All possible operations and functions are below
-
-## Important notes:
-
-* The game must be written in C, have a structured style, and run from the terminal; 
-
-
-## List.
-
-> Possible operations & functions \
-> "+" \
-> "-" (unary and binary) \
-> "*" \
-> "/" \
-> "()" \
-> sin(x) \
-> cos(x) \
-> tan(x) \
-> ctg(x) \
-> sqrt(x) \
-> ln(x)
-
+> Использовать можно только <math.h>, <stdio.h>, <stdlib.h>, <string.h> и твои собственные библиотеки.
